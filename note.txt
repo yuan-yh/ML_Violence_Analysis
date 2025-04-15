@@ -25,9 +25,23 @@ MHA / 1 / 2 / NLH: Type of Violence (different term)
 MHA (mostly N/S) / 1 / NLH: Primary Contributing Factors
 
 # Severity of Assault
-MHA / 1 / 2: Severity of Assault
+MHA / 1 / 2 / NLH (mapped): Severity of Assault
 NLH: Physical Injury Incurred? Level of Care
 ## it will be great to relate to the aggressor / location / violence_type like a tree
 
-# Description: semantic
-# After-Result (emotional...)
+
+- Description: semantic
+# Primary Assault Description
+1 / 2 / MHA / NLH
+## Assault Description (more specific?)
+1 / NLH / 2 (empty) / MHA (empty)
+
+- After-Result (emotional...)
+# Emotional and/ or Psychological Impact
+1 / 2 / MHA / NLH
+
+# Level of Care Needed
+1 / 2 (empty) / MHA / NLH (mapped)
+
+# Response Action Taken
+1 / 2 / MHA / NLH

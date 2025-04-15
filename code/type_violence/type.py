@@ -52,3 +52,8 @@ violence_mapping = {
     'Alleged Abuse/Assault': 'Other'
 }
 
+for hosp, df in dfs.items():
+    df['Type of Violence'] = df['Type of Violence'].str.strip()  # Clean whitespace
+    df['Violence_Category'] = df['Type of Violence'].map(violence_mapping)
+
+    # For any remaining unmapped values, I want to extract those unmapped value and summarize them
