@@ -86,3 +86,4 @@
 - https://pmc.ncbi.nlm.nih.gov/articles/PMC10246850/
 - https://pmc.ncbi.nlm.nih.gov/articles/PMC8962616/
 - https://edition.pagesuite.com/popovers/dynamic_article_popover.aspx?artguid=621e2c49-cc12-4c9d-ae5a-256f585eb81e&appcode=BOSGLO&eguid=a36d36f8-c987-4b93-81a1-d378a73f20d7&pnum=106#
+- API Doc: https://open-meteo.com/en/docs
