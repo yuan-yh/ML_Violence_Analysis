@@ -1,0 +1,33 @@
+# Date
+## Analyze month pattern
+## Analyze weekdate pattern
+## Analyze time pattern
+
+# Location
+MHA / 1 / 2: Facility Type
+NLH (included in `Occupational Category of Person Affected`)
+MHA / 1 / 2 / NLH: Department/Office Incident Took Place
+## Analyze the most dangerous place
+
+# Victim
+MHA / 1 / 2 / NLH: Occupational Category of Person Affected
+## Analyze the most dangerous role
+
+# Aggressor
+MHA / 1 / 2: Aggressor
+## Analyze the source of violence
+
+# Type of Violence
+MHA / 1 / 2 / NLH: Type of Violence (different term)
+## pie chart or histogram
+
+# Primary Contributing Factors 
+MHA (mostly N/S) / 1 / NLH: Primary Contributing Factors
+
+# Severity of Assault
+MHA / 1 / 2: Severity of Assault
+NLH: Physical Injury Incurred? Level of Care
+## it will be great to relate to the aggressor / location / violence_type like a tree
+
+# Description: semantic
+# After-Result (emotional...)
