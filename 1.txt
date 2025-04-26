@@ -1,0 +1,139 @@
+Slide 1: 40s 
+Hi everyone, we are the medical team.
+
+Violence against healthcare is becoming a common topic since COVID.
+
+You may think about Luigi, but today we'll focus on those happened in hospitals.
+
+In this project, we’ll analyze where, when, and why violence happens, and most importantly, how to mitigate it.
+
+This isn’t just about numbers; it’s about protecting people who save others. So let’s begin.
+
+--------------
+
+Slide 2: 25s
+After 3 previous medical group, I think we all familiar with the background now, so I will jump to the workflow.
+
+We started by merging the given 9 datasets, clean and map into number, performing ML and semantic analysis, then combine for results.
+
+--------------
+
+Slide 3: 25s
+Across the dataset, we spotted 1517 valid cases since last year. (which is surprising to me given we are in Maine)
+
+Next we will predict severity, identifying high-risk roles/locations, and extracting hidden themes from descriptions.
+
+--------------
+
+Slide 4: 15s
+To begin with, let’s ask a quick question: who dunnit?
+
+As we can see, over 80% of violence is done by patients.
+
+(Inpatient: stay overnight in a hospital for treatment; outpatient: without staying overnight)
+
+--------------
+
+Slide 5: 10s
+And unfortunately, nurses are the most impacted healthcare professions, followed by security and then technician.
+
+--------------
+
+Slide 8: 10s
+Next you may wonder, is there any time pattern?
+
+When we combine them together, we can spot a higher tendency at business days.
+
+--------------
+Slide 10: 15s
+We also checked the weather pattern. 
+
+Fun fact about this part: i used concurrency and lru caching to accelerate the weather checking process, so LeetCode worked, though we didn’t see new patterns here.
+
+--------------
+
+Slide 11: 20s
+And last is the moon phase, which rejects the idea of ‘lunatic’: no, you won’t be more violent at full moon.
+
+A quick summary so far: if you are a nurse working on Thursday in October when its 50F outside, may be consider taking a PTO?
+
+--------------
+
+Slide 12: 20s
+Next, let’s focus on the location: people in clinical units like ED/ER are definitely living in a hard time, suffering more physical and verbal abuse.
+
+Starting from here, let’s step onto a more advanced level.
+
+--------------
+Slide 15: 50s
+We also applied semantic analysis to process contributing factors and descriptions.
+
+BERTopic was used to group similar descriptions into themes.
+
+The topic model was actually inspired by the showcase yesterday, in which one project used ClinicalBERT for medical prediction.
+
+Next, we created a correlation matrix to see how variables related to each other, which will be shown in a second.
+
+By combining topics in binary flags with structured data, we are ready for the next level.
+
+--------------
+
+Slide 17: 25s
+Let’s focus on the severity column.
+
+The `aggressor` feature is the strongest predictor.
+
+Certain types of violence might be associated with lower severity, same for the role of a person involved and higher temperature.
+
+Most features (like `location`, `day`, `month`, `day_of_week`, `Moon Phase`, `topic`) show very weak correlations, which probably don’t significantly influence our target in a linear way.
+
+--------------
+
+Slide 18: 50s
+Eventually, we combine the semantic result with other structured data and run the XGBoost model.
+
+There is a little concern, as we noticed the data is not balanced.
+
+As a result, the overall success rate is 78%.
+
+The model performs well at spotting "None" (Class 0), with 91% Precision.
+
+However, for class 1 to 3 which represent moderate / mild / severe, the low F1 score means the model struggles with detecting them.
+
+This is likely caused by class imbalance issues as we mentioned earlier.
+
+--------------
+Slide 19: 20s
+`Aggressor`, `Violence Type` and `text` are the most important factors for model prediction, so definitely keep those fields in the violence report form.
+
+--------------
+Slide 20: 20s
+Also we can finally answer the question: why dunnit?
+
+From these two pie charts, we’ve successfully identified `communication`, `mental health challenges`, and `resource limitations` as major root causes.
+
+--------------
+Slide 21: 40s
+In summary, we were able to answer most questions from our stakeholders. 
+
+Nurses are the most-impacted healthcare professions, and clinical units suffer a higher violence rate.
+
+The root causes include communication breakdowns, mental health challenges, and resource limitations.
+
+Therefore, we propose three recommendations: staff training, mental support,and resource allocation. 
+
+--------------
+Slide 22: 30s
+But this is not the end.
+
+In terms of future data analysis, we can consider SMOTE for oversampling rare classes.
+
+And in the real world, it’s also important to support those impacted people and to build a safer workplace.
+
+We’d like to thank the instructor and the previous two medical groups for sharing their brilliant insights. 
+
+We are open for questions now.
+
+--------------
+
+
