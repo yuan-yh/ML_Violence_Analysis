@@ -2,9 +2,10 @@
 
 This project explores workplace violence reported at hospitals in Maine, aiming to identify influential factors and predict the severity of incidents using machine learning and natural language processing techniques.
 
-An analysis of workplace violence at hospitals in Maine to predict violence influential factors using machine learning and text mining techniques
-
 Team Member: Yueheng Yuan, Muyang Cheng, Wenyi Ye
+
+**Author:** Yueheng Yuan
+**Keywords:** healthcare, workplace violence, machine learning, NLP, BERTopic, XGBoost, Maine hospitals, policy analysis
 
 ## Overview
 
@@ -12,11 +13,11 @@ Healthcare workers face a disproportionate amount of workplace violence. To addr
 
 ## Key Contributions
 
-### 🔄 Data Preprocessing
+### Data Preprocessing
 - Merged multiple datasets into a unified structure suitable for analysis.
 - Performed cleaning and transformation to prepare the data for both statistical analysis and modeling.
 
-### 📊 Exploratory Data Analysis
+### Exploratory Data Analysis
 - Assessed basic statistics related to:
   - **Weather** and **temperature** at the time of incidents.
   - **Moon phases**, **time**, and **date** patterns.
@@ -25,14 +26,14 @@ Healthcare workers face a disproportionate amount of workplace violence. To addr
 - Identified nurses as the most frequently affected role — though partly due to their high representation in hospital staffing.
 - Found that **emergency departments (ED/ER)** and **behavioral care (BC)** units experience the highest rates of violent events.
 
-### 🤖 Machine Learning Models
+### Machine Learning Models
 - Built predictive models to classify **violence severity** using:
   - **Decision Tree**
   - **Support Vector Machine (SVM)**
   - **Gaussian Naive Bayes (GaussianNB)**
 - Evaluated model performance; initial best-performing model was **Decision Tree** with **69.5% accuracy**.
 
-### 🧠 Semantic Analysis & Advanced ML
+### Semantic Analysis & Advanced ML
 - Applied **BERTopic** to extract semantic features from:
   - `Primary Assault Description`
   - `Assault Description`
@@ -47,7 +48,7 @@ Healthcare workers face a disproportionate amount of workplace violence. To addr
 - Chose **XGBoost** for its robustness with imbalanced datasets.
 - Final model achieved **78% accuracy**, improving significantly over previous models.
 
-### 🔍 Key Insights
+### Key Insights
 - Top contributing factors to violent events include:
   - Mental health challenges
   - Communication breakdowns
@@ -60,7 +61,7 @@ Healthcare workers face a disproportionate amount of workplace violence. To addr
   - Emergency Rooms (ED/ER)
   - Behavioral Care (BC) units
 
-## 📌 Policy Recommendations
+## Policy Recommendations
 Based on findings, suggested actions include:
 - **De-escalation training** for frontline staff.
 - **Deployment of mental health professionals** in high-risk units.
@@ -70,8 +71,3 @@ Based on findings, suggested actions include:
 - Extend the analysis to assess **post-incident care needs**.
 - Use longitudinal data to track impact of implemented policy changes.
 - Explore real-time alert systems for high-risk conditions using NLP-triggered monitoring.
-
----
-
-**Author:** [Your Name]  
-**Keywords:** healthcare, workplace violence, machine learning, NLP, BERTopic, XGBoost, Maine hospitals, policy analysis
