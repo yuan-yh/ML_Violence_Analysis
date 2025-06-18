@@ -5,6 +5,7 @@ This project explores workplace violence reported at hospitals in Maine, aiming 
 Team Member: Yueheng Yuan, Muyang Cheng, Wenyi Ye
 
 **Author:** Yueheng Yuan
+
 **Keywords:** healthcare, workplace violence, machine learning, NLP, BERTopic, XGBoost, Maine hospitals, policy analysis
 
 ## Overview
