@@ -14,8 +14,7 @@ Healthcare workers face a disproportionate amount of workplace violence. To addr
 ## Key Contributions
 
 ### Data Preprocessing
-- Merged multiple datasets into a unified structure suitable for analysis.
-- Performed cleaning and transformation to prepare the data for both statistical analysis and modeling.
+- Cleaned and transformed multiple datasets into a unified structure suitable for analysis.
 
 ### Exploratory Data Analysis
 - Assessed basic statistics related to:
